@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Genral Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+     <style>
+      body{
+        background-color: aliceblue;
+      }
+        .container{
+          background: white;
+          color: black;
+          padding: 40px;
+          border-radius: 15px;
+          width: 400px;
+          box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+          margin-top: 20px;
+          border: 2px solid black;
+          border-radius: 10px;
+        }
+        .sign{
+          text-align: center;
+          font-size: 25px;
+          margin-bottom: 20px;
+          font-weight: bold;
+          cursor: pointer;
+          border-radius: 10px;
+          padding: 10px;
+        }
+        .sign:hover{
+          transform: scale(1.1);
+          background-color: rgb(91, 172, 131);
+        }
+        .input-box{
+          margin-bottom: 15px;
+          cursor: pointer;
+        }
+        .input-box label{
+          display: block;
+          margin-bottom: 5px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .input-box input{
+          width: 100%;
+          padding: 10px;
+          border-radius: 2px solid black;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+        .anu{
+          text-decoration: none;
+          padding: 15px;
+          width: 100%;
+          background-color:cornflowerblue;
+          border-radius: 10px;
+          border: 1px solid black;
+          cursor: pointer;
+        }
+        
+        .con{
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+          margin-left: 50px;
+          cursor: pointer;
+        }
+        .ready{
+          margin-top: 10px;
+          text-align: center;
+
+        }
+        .ready a{
+          text-decoration: none;
+          color: black;
+        }
+          footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: azure;
+  color: black;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+footer .hero {
+  flex: 1 1 100px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+footer .hero h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: black;
+  display: inline-block;
+  cursor: pointer;
+}
+footer p{
+    cursor: pointer;
+}
+/* Tablet view (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+    margin-top: 30px;
+  }
+
+  .sign h2 {
+    font-size: 22px;
+  }
+
+  .input-box label {
+    font-size: 16px;
+  }
+
+  .input-box input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .con {
+    margin-left: 30px;
+    font-size: 18px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .hero {
+    margin: 15px 0;
+  }
+}
+
+/* Mobile view (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .sign h2 {
+    font-size: 20px;
+  }
+
+  .input-box label {
+    font-size: 14px;
+  }
+
+  .input-box input {
+    padding: 7px;
+    font-size: 13px;
+  }
+
+  .anu {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .con {
+    margin-left: 0;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .ready {
+    font-size: 14px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .hero h2 {
+    font-size: 18px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+}
+
+     </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+      
+        <nav class="navbar navbar-expand-lg bg-success" data-bs-theme="">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="logo2.png" alt="logo" width="80" height="70">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex w-75" role="search">
+        <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-danger" type="submit">Search</button>
+      </form>
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signIn.html">SignIn</a>
+        </li>
+             <li class="nav-item">
+          <a class="nav-link" href="#">SignUP</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html">Grocery</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Fashion</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Electronics</a></li> -->
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      </div>
+    </div>
+    </div>
+
+    <!--Main-->
+    <div class="container">
+      <div class="sign">
+        <h2>SignUP</h2>
+      </div>
+      <form>
+         <div class="input-box">
+          <label>Enter Name:</label>
+          <input type="text" placeholder="Enter Your Name">
+      </div>
+       <div class="input-box">
+          <label>Enter Email:</label>
+          <input type="text" placeholder="Enter Your Name">
+      </div>
+       <div class="input-box">
+          <label>Enter Password:</label>
+          <input type="password" placeholder="Enter Your Name">
+      </div>
+       <div class="input-box">
+          <label>Enter Conform Password:</label>
+          <input type="password" placeholder="Enter Your Name">
+      </div>
+      <div class="anu">
+      <a href="#" class="con">Conform Order</a>
+      </div>
+      <div class="ready">
+        <p>Already have an account? <a href="#">Login</a></p>
+      </div>
+      </form>
+    </div>
+    
+    <!--Footer-->
+
+    <footer>
+        <div class="hero">
+            <h2>Store</h2>
+            <p>About Us</p>
+            <P>Tearm</P>
+            <P>Contact us</P>
+            
+         </div>
+         <div class="hero">
+            <h2>Service</h2>
+            <p>All Kinds of Household Items Are Available.</p>
+            <p>All Product Availables.</p>
+         </div>
+         <div class="hero">
+            <h2>Social</h2>
+            <p>Facebook</p>
+            <p>Twiter</p>
+            <p>Instagram</p>
+            <!-- <p>Linkedin</p> -->
+         </div>
+         <div class="hero">
+            <h2>Contact US</h2>
+            <p>Store Head:Ashish Kumar Mishra</p>
+            <p>Mob: 9794XXXXXX</p>
+            <p>Address: Ashwan Mishran Rampur Jaunpur Uttar Pardesh</p>
+         </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
